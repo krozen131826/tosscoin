@@ -1,0 +1,112 @@
+body {
+  background: #fafafa;
+  background: url(./vegas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  font-family: "Odibee Sans", cursive;
+  font-family: "Press Start 2P", cursive;
+}
+
+#coin {
+  margin: 20px 0;
+}
+
+#button {
+  background: rgb(212, 212, 212);
+  color: #111;
+  padding: 10px 40px;
+  border-radius: 24px;
+  display: inline-block;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 8px #dcdcdc;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.animate-coin {
+  animation: flip 1.4s 1;
+}
+@keyframes flip {
+  0% {
+    transform: scale3d(1, 1, 1) rotateX(0deg);
+  }
+  50% {
+    transform: scale3d(2, 2, 2) rotateX(3600deg);
+  }
+  100% {
+    transform: scale3d(1, 1, 1) rotateX(7200deg);
+  }
+}
+/* Centralise content */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: Center;
+}
+img {
+  max-width: 100%;
+}
+#tailsCounter span,
+#headsCounter span {
+  color: white;
+}
+#result {
+  color: black;
+}
+
+.results-back-color {
+  border: 1px solid grey;
+}
+
+.background-color {
+  background-color: white;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.utl-margin-right {
+  margin-right: 10px;
+}
+
+.back-color-heads {
+  background-color: red;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.back-color-tails {
+  background-color: blue;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 18.72px;
+}
